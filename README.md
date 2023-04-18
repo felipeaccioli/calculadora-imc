@@ -1,4 +1,4 @@
-#Calculadora de IMC
+CALCULADORA DE IMC
 
 Calculadura de IMC criada utilizando JavaScript, HTML e CSS.
 
