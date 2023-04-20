@@ -24,6 +24,7 @@ main {
   align-items: center;
   justify-content: space-evenly;
   border-radius: 20px;
+  border-style:solid;
   box-shadow: 0 0 10px black;
 }
 
@@ -54,6 +55,7 @@ main {
   outline: 0;
   font: bold 1.5rem 'League Spartan';
   text-align: center;
+  border-style: solid;
 }
 
 .input label {
