@@ -1,14 +1,3 @@
-// const calcular = document.getElementById('calcular');
-
-// function imc () {
-//   const nome = document.getElementById('nome');
-//   const altura = document.getElementById('altura');
-//   const peso = document.getElementById('peso');
-//   const resultado = document.getElementById('resultado');
-// }
-
-// calcular.addEventListener('click', imc);
-
 function calcular(event) {
   event.preventDefault();
 
@@ -18,9 +7,11 @@ function calcular(event) {
 
   let pesoInput = document.getElementById ("peso").value;
 
-  let resultado = document.getElementById("resultado");
+  let resultadoResult = document.getElementById("resultado");
 
-  let calcular = (pesoInput / alturaInput^2);
+  let textResult = document.getElementById("text-result");
+
+  let calcular = (pesoInput / (alturaInput^2));
 
   if(calculo < 18.5) {
     textResult.innerHTML = "Abaixo do peso.";
@@ -32,15 +23,12 @@ function calcular(event) {
       textResult.innerHTML = "Acima do peso.";
         } else
         if (calculo < 35) {
-        textResult.innerHTML = "Obesidade grau I";
+        textResult.innerHTML = "Obesidade grau I.";
           } else
           if (calculo < 40) {
-          textResult.innerHTML = "Obesidade grau II";
+          textResult.innerHTML = "Obesidade grau II.";
             } else
             if (calculo > 40.1) {
-            textResult.innerHTML = "Obesidade grau III";
+            textResult.innerHTML = "Obesidade grau III.";
             }
-  
-  contentResult.classList.remove("hide")
-
 }
