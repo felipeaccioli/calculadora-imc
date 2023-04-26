@@ -14,16 +14,16 @@ function calcular(event) {
   let calculo = (pesoInput / (alturaInput * alturaInput));
 
   if(calculo < 18.5) {
-    textResult.innerHTML = "Abaixo do peso.";
+    textResult.innerHTML = "O IMC é de "+ calculo.toFixed(2) +". "+ nomeInput +" está abaixo do peso.";
     } else if (calculo < 25) {
-      textResult.innerHTML = "Peso normal.";
+      textResult.innerHTML = "O IMC é de "+ calculo.toFixed(2) +". "+ nomeInput +" está com o peso normal.";
       } else if (calculo < 30) {
-        textResult.innerHTML = "Acima do peso.";
+        textResult.innerHTML = "O IMC é de "+ calculo.toFixed(2) +". "+ nomeInput +" está acima do peso.";
         } else if (calculo < 35) {
-          textResult.innerHTML = "Obesidade grau I.";
+          textResult.innerHTML = "O IMC é de "+ calculo.toFixed(2) +". "+ nomeInput +" está com obesidade grau I.";
           } else if (calculo < 40) {
-            textResult.innerHTML = "Obesidade grau II.";
+            textResult.innerHTML = "O IMC é de "+ calculo.toFixed(2) +". "+ nomeInput +" está com obesidade grau II.";
             } else if (calculo > 40.1) {
-              textResult.innerHTML = "Obesidade grau III.";
+              textResult.innerHTML = "O IMC é de "+ calculo.toFixed(2) +". "+ nomeInput +" está com obesidade grau III.";
             }
 }
